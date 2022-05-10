@@ -7,18 +7,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
     <link rel="shortcut icon" type="image/png" href="favicon.jpg">
     
-	<link rel="stylesheet" type="text/css" href="./css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="./css/bootstrap.css">
 	<link rel="stylesheet" type="text/css" href="style.css">
-	<link rel="stylesheet" type="text/css" href="./css/font-awesome.min.css">
-	<link rel="stylesheet" type="text/css" href="./css/et-line.min.css">
+	<link rel="stylesheet" type="text/css" href="./css/font-awesome.css">
+	<link rel="stylesheet" type="text/css" href="./css/et-line.css">
 	
     
-	<script src="./js/jquery-2.1.0.min.js"></script>
-	<script src="./js/bootstrap.min.js"></script>
-	<script src="./js/blocs.min.js"></script>
+	<script src="./js/jquery-2.1.0.js"></script>
+	<script src="./js/bootstrap.js"></script>
+	<script src="./js/blocs.js"></script>
 	<script src="./js/jqBootstrapValidation.js"></script>
 	<script src="./js/formHandler.js"></script>
-    <title>page2</title>
+    <title>contact</title>
 
     
 <!-- Analytics -->
@@ -73,25 +73,28 @@
 				<form id="form_1" novalidate success-msg="Your message has been sent." fail-msg="Sorry it seems that our mail server is not responding, Sorry for the inconvenience!">
 					<div class="form-group">
 						<form>
-							<p>Nom</p>
+							<label for="pseudo"> Nom </label>
+								<input type="text" name="nom" id="nom"/>
 						</form>
-						<input id="name" class="form-control" required />
 					</div>
+					<br>
 					<div class="form-group">
 						<form>
-							<p>Adresse email</p>
-						</form>
-						<input id="email" class="form-control" type="email" required />
-					</div>
-					<div class="form-group">
-						<form>
-							<p>Comment nous avez-vous connu ? </p> 
-						</form>
+						<label for="adresse mail"> Adresse email</label>
 						<input class="form-control" type="email" required id="input_504" />
+					</form>
+				</div>
+				<br>
+					<div class="form-group">
+						<form>
+							<label for="comment nous avez-vous connu?"> Comment nous avez-vous connu ? </label>
+							<input type="text" name="pseudo"></p> 
+						</form>
+						
 					</div>
 					<div class="form-group">
 						<form>
-							<p>Brief de votre projet (Ajoutez autant de détails que nécessaire)</p>
+							<label for="Descriptif de votre projet">Brief de votre projet (Ajoutez autant de détails que nécessaire)</label>
 						</form><textarea id="message" class="form-control" rows="4" cols="50" required></textarea>
 					</div> 
 					<button class="bloc-button btn btn-lg btn-block cta-hero btn-atomic-tangerine" type="submit">
